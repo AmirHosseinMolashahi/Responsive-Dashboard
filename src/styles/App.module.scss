@@ -1,0 +1,47 @@
+@import './contants.scss';
+
+.container {
+    overflow-x: clip;
+    position: relative;
+    color: $secondary;
+    background: #F8F7F1;
+    display: flex;
+    gap: 2rem;
+
+    .mainDiv {
+        @media (max-width: $sm){
+            width: 100%;
+        }
+        padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .pageBody {
+            @media (max-width: $sm){
+                flex-direction: column;
+                padding: 0 1rem;
+            }
+            display: flex;
+            gap: 1rem;
+            .leftside {
+                @media (max-width: $sm){
+                    flex: auto;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                flex: 3;
+            }
+
+            .rightside {
+                @media (max-width: $sm){
+                    flex: auto;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                flex: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    .container {
+        width: 100%;
+
+        >:nth-child(1){
+            @media (max-width: $sm) {
+                width: 100%;
+            }
+            border-color: transparent;
+            border-radius: 5px;
+            width: 95%;
+            padding: 1rem;
+        }
+    }
+}
